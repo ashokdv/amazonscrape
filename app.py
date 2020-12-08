@@ -230,12 +230,7 @@ def alerts():
             stock = 'Out of Stock'
         except:
             stock = 'Available On Stock'
-        # if (int(saleprice)!=0):
-        #     print("true")
-        # el
-            
-        # if (int(ourprice) <= int(users['yourprice']))  or (int(saleprice) <= int(users['yourprice']))   or (int(dealprice) <= int(users['yourprice'])) :
-        
+      
         if dealprice > 0 and ( dealprice < users['deal_price'] or dealprice < users['sale_price'] or dealprice < users['actual_price']) :
             message = message + 'Price : '+str(dealprice) + ". Product is "+stock +".Deal is Available on this  Product"+ "link:" + users['short_url']
             sms = sms_trigger(message,users['mobilenumber'])
@@ -251,135 +246,10 @@ def alerts():
 
         else :
             pass
-
-        # elif  int(saleprice) > 0 and  (int(saleprice) <= int(users['yourprice'])) :
-        #     print("--------------IF--LO IF----------------")
-
-        #     message = message + 'Saleprice : '+str(saleprice) + "Product is "+stock
-        #     print("--------------IF--LO elIF----------------")
-    
-        #     sms = sms_trigger(message,users['mobilenumber'])
-
-        # elif int(dealprice) > 0 and (int(dealprice) <= int(users['yourprice'])) :
-        #     print("--------------IF--LO elIF----------------")
-
-        #     message = message + 'Dealprice : '+str(dealprice) + "Product is "+stock
-
-        #     sms = sms_trigger(message,users['mobilenumber'])
-
-        # elif int(ourprice) > 0 and (int(ourprice) <= int(users['yourprice'])) :
-        #     print("--------------IF--LO elIF----------------")
-
-        #     print("------------Your price-------------",users['yourprice'])
-        #     message = message + 'Actual MRP : '+str(ourprice) + " .Product is "+stock
-        #     sms = sms_trigger(message,users['mobilenumber'])
-        # # else:
-        # #     print("--------------IF--LO else---------------")
-
-        # #     # pass
-            
-        # elif (int(saleprice) != 0):
-        #     print("--------------IF--LO elIF-1---------------")
-            
-
-        #     if  saleprice <= users["actual_price"] or saleprice <= users["sale_price"] or saleprice <= users["deal_price"]:
-        #         message = message + 'Price : '+ str(saleprice) + ".On Sale" + "Product is "+stock
-        #         sms = sms_trigger(message,users['mobilenumber'])
-
-        # elif dealprice != 0 :
-        #     print("--------------IF--LO elIF-2---------------")
-
-        #     if  dealprice <= users["actual_price"] or dealprice <= users["sale_price"] or dealprice <= users["deal_price"]:
-        #         message = message + 'Price : '+ str(dealprice) + ". Deal Available" + "Product is "+stock    
-        #         sms = sms_trigger(message,users['mobilenumber'])
-     
-        # elif ourprice != 0 :
-        #     print("--------------IF--LO elIF-3---------------")
-
-        #     if  ourprice <= users["actual_price"] or ourprice <= users["sale_price"] or ourprice <= users["deal_price"]:
-        #         message = message + 'Price : '+ str(ourprice) + "No Deal Available or Not in Sale" + "Product is "+stock
-        #         sms = sms_trigger(message,users['mobilenumber'])
-                
-
-        # else:
-        #     print("--------------IF--LO elIF-3---------------")
-
-        #     if dealprice >=0 :
-        #         # Amazon offered a deal 
-        #         #trigger-sms()
-        #         pass
-        #     elif saleprice >= 0:
-        #         # Sale is going on this product
-        #         #trigger-sms()
-        #         pass
-        #     else:
-        #         pass
-        
-        
-        
        
     return "Sms triggered"
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# @app.route('/trigger-sms',methods=['POST'])
-# def trigger():     
-#     HEADERS = ({'User-Agent':
-#                 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.36',
-#                 'Accept-Language': 'en-US, en;q=0.5'})
-
-#     URL = "https://www.amazon.in/Purifier-Active-Copper-PRIMIUM-Quality/dp/B08DP5VCPQ/ref=sr_1_1_sspa?dchild=1&pd_rd_r=50379ee9-9534-4616-9cd4-edb916bf991e&pd_rd_w=Ma6VB&pd_rd_wg=KMqfo&pf_rd_p=47bc7ca3-6922-4837-a66e-7c6588edc2c1&pf_rd_r=1YTATD1XX8NMT89NGTWA&qid=1607269488&refinements=p_72%3A1318477031&s=kitchen&sr=1-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEyT0NGV08zVkJHR1g4JmVuY3J5cHRlZElkPUEwNzUyNzQwR0JTNjRRN1hFTUQ2JmVuY3J5cHRlZEFkSWQ9QTEwMjYzNzYyVTlYWExBUVVWVlpGJndpZGdldE5hbWU9c3BfYXRmX2Jyb3dzZSZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU="
-#     content = requests.get(URL , headers= HEADERS)
-#     soup = BeautifulSoup(content.text, 'lxml')
-#     # print(soup)
-
-#     title = soup.find(id='productTitle').get_text().strip()
-#     # print(len(title))
-#     if len(title) > 100:
-#         title = title[0:100]
-#         print(title)
-#     try:
-#         # price = float(soup.find(id='priceblock_ourprice').get_text().replace('.', '').replace('€', '').replace(',', '.').strip())
-#         ourprice = soup.find(id='priceblock_ourprice').get_text().replace('₹','').strip()
-#         print(ourprice)
-#         try:
-#             dealprice = soup.find(id='priceblock_dealprice').get_text().replace('₹','').strip()
-#             print(dealprice)
-#         except:
-#             pass
-        
-#     except Exception as e:
-#         print(e)
-#         # price = ''
-
-
-#     try:
-#         soup.select('#availability .a-color-state')[0].get_text().strip()
-#         stock = 'Out of Stock'
-#     except:
-#         stock = 'Available'
-
-#     print(stock)
-#     return 'sms-triggered to all subscribed users'
-
 if __name__ == '__main__': 
-
-    app.run() 
+    app.run(threaded=True, port=5000)
