@@ -9,7 +9,8 @@ from pyshorteners import Shortener
 app = Flask(__name__)   
 @app.route('/') 
 def home():
-    return render_template("home.html")
+    return "<h1>Welcome to our server !!</h1>"
+#    return render_template("home.html")
 
 
 @app.route('/users',methods=['POST'])
