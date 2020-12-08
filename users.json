@@ -1,0 +1,74 @@
+{
+    "users": [
+        {
+            "name": "ashok",
+            "title": "Not found",
+            "URL": "https://www.amazon.in/gp/product/B07TTGTQXZ/ref=ewc_pr_img_1?smid=A9FLTP1NHYPX3&psc=1",
+            "mobilenumber": "7989236152",
+            "yourprice": 110,
+            "UUID": "aeaccb48-392e-11eb-bcfe-6532cf78ad59",
+            "subscribe": "Y",
+            "actual_price": 0,
+            "deal_price": 0,
+            "sale_price": 0,
+            "stock": "Available",
+            "short_url": "rebrand.ly/t0x12"
+        },
+        {
+            "name": "ashok",
+            "title": "Not found",
+            "URL": "https://www.amazon.in/gp/product/B07TTGTQXZ/ref=ewc_pr_img_1?smid=A9FLTP1NHYPX3&psc=1",
+            "mobilenumber": "7989236152",
+            "yourprice": 110,
+            "UUID": "28ce78cc-392f-11eb-bcfe-6532cf78ad59",
+            "subscribe": "Y",
+            "actual_price": 0,
+            "deal_price": 0,
+            "sale_price": 0,
+            "stock": "Available",
+            "short_url": "rebrand.ly/wqhje"
+        },
+        {
+            "name": "ashok",
+            "title": "Not found",
+            "URL": "https://www.amazon.in/Maspar-Fretwork-Parquet-Beige-Cotton/dp/B0872PJH62/ref=lp_22430210031_1_5?s=kitchen&ie=UTF8&qid=1607416084&sr=1-5",
+            "mobilenumber": "7989236152",
+            "yourprice": 110,
+            "UUID": "55c98092-392f-11eb-bcfe-6532cf78ad59",
+            "subscribe": "Y",
+            "actual_price": 0,
+            "deal_price": 0,
+            "sale_price": 0,
+            "stock": "Available",
+            "short_url": "rebrand.ly/khe7g"
+        },
+        {
+            "name": "ashok",
+            "title": "Not found",
+            "URL": "https://www.amazon.in/Maspar-Fretwork-Parquet-Beige-Cotton/dp/B0872PJH62/ref=lp_22430210031_1_5?s=kitchen&ie=UTF8&qid=1607416084&sr=1-5",
+            "mobilenumber": "7989236152",
+            "yourprice": 110,
+            "UUID": "63220a70-392f-11eb-bcfe-6532cf78ad59",
+            "subscribe": "Y",
+            "actual_price": 0,
+            "deal_price": 0,
+            "sale_price": 0,
+            "stock": "Available",
+            "short_url": "rebrand.ly/h5lvn"
+        },
+        {
+            "name": "ashok",
+            "title": "Maspar Fretwork Parquet Beige Cotton 550 GSM 2 PC Hand Towel Set",
+            "URL": "https://www.amazon.in/Maspar-Fretwork-Parquet-Beige-Cotton/dp/B0872PJH62/ref=lp_22430210031_1_5?s=kitchen&ie=UTF8&qid=1607416084&sr=1-5",
+            "mobilenumber": "7989236152",
+            "yourprice": 110,
+            "UUID": "b7765d92-3934-11eb-bcfe-6532cf78ad59",
+            "subscribe": "Y",
+            "actual_price": 1100.0,
+            "deal_price": 0,
+            "sale_price": 0,
+            "stock": "Available",
+            "short_url": "rebrand.ly/boucy"
+        }
+    ]
+}
